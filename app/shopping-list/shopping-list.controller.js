@@ -17,8 +17,8 @@
           if (selectedItem === item) {
             selectedItem.selected = true;
           }
-        })
-      }
-    })
+        });
+      };
+    });
 
 })();

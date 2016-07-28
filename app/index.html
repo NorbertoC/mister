@@ -7,21 +7,35 @@
   <title>Mister Pizza</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css">
   <!-- Dropdown.js -->
   <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
 </head>
 
-<body class="container">
-  <h4>asdfasdfasdf</h4>
-  <div class="row">
-    <ul class="nav nav-pills">
-      <li><a href="#/home">Home</a></li>
-      <li><a href="#/list">Shopping List</a></li>
-    </ul>
+<body>
+  <div class="containter">
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          </button>
+          <a class="navbar-brand" href="#/home">Mister</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/list">Shopping List</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
+  <div ui-view></div>
 </body>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
+<script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/angular-aria/angular-aria.js"></script>

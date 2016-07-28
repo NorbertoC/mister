@@ -11,8 +11,22 @@
       $stateProvider
         .state('home', {
           url: "/home",
-          templateUrl: "shopping-list/shopping-list.template.html"
+          templateUrl: "shopping-list/home.html"
         })
+        .state('list', {
+          url: '/list',
+          templateUrl: 'shopping-list/list.html',
+          controller: 'ListCtrl'
+        }).
+        state('list.item', {
+          url: '/:item',
+          templateUrl: 'shopping-list/list.item.html',
+          controller: function($scope, $stateParams) {
+            $scope.item = $stateParams.item;
+          }
+        })
+
+      ;
 
     });
 
