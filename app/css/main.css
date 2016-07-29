@@ -1,4 +1,9 @@
 .container {
+  background-color: #eb3d47;
   margin-left: auto;
   margin-right: auto;
+}
+
+.navbar {
+  background-color: #eb3d47;
 }
