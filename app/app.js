@@ -5,4 +5,4 @@
   // For Component users, it should look like this:
   // angular.module('myApp', [require('angular-ui-router')]);
 
-})();
+}());
