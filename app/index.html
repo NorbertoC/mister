@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Mister Pizza</title>
+  <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
   <!-- Dropdown.js -->
@@ -12,13 +13,13 @@
 </head>
 
 <body class="container">
-  <h4>asdfasdfasdf</h4>
   <div class="row">
     <ul class="nav nav-pills">
       <li><a href="#/home">Home</a></li>
       <li><a href="#/list">Shopping List</a></li>
     </ul>
   </div>
+  <div ui-view></div>
 </body>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -27,8 +28,10 @@
 <script src="bower_components/angular-aria/angular-aria.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-material/angular-material.js"></script>
+<!-- My imports -->
 <script src="app.js"></script>
 <script src="routes.js"></script>
-<script src="shopping-list/shopping-list.controller.js"></script>
+<!-- Controllers -->
+<!-- <script src="shopping-list/shopping-list.controller.js"></script> -->
 
 </html>
