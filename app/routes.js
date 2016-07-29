@@ -17,14 +17,23 @@
           url: '/list',
           templateUrl: 'shopping-list/list.html',
           controller: 'ListCtrl'
-        }).
-        state('list.item', {
+        })
+        .state('list.item', {
           url: '/:item',
           templateUrl: 'shopping-list/list.item.html',
           controller: function($scope, $stateParams) {
             $scope.item = $stateParams.item;
           }
         })
+        .state('pizzas', {
+          url: '/pizzas',
+          templateUrl: 'HTML/pizzas.html'
+        })
+        .state('menu', {
+          url:'/menu',
+          templateUrl: 'HTML/Menu.html'
+        })
+
 
       ;
 

@@ -2,50 +2,55 @@
 <html ng-app="myApp">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Mister Pizza</title>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
-  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Dropdown.js -->
-  <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mister Pizza</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Dropdown.js -->
+    <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <i class="material-icons">face</i>
-        <a class="navbar-brand" href="#/home">Mister</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#/home">Home</a></li>
-          <li><a href="#/list">Shopping List</a></li>
-          <div class="col-md-3">
-            <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Dropdown
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#/list">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <i class="material-icons">face</i>
+
+                <div>
+                    <a href="#/home">
+                        <img src="../img/Misterpizza.jpg" alt="Home" width="200" height="100">
+                    </a>
+                </div>
             </div>
-          </div>
-          <li></li>
-        </ul>
-      </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/home">Home</a></li>
+                    <li><a href="#/menu">Menu</a></li>
+                    <li><a href="#/list">Shopping List</a></li>
+                    <div class="col-md-3">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#/list">Action</a></li>
+                                <li><a href="#/pizzas">Pizzas de la Agus</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
-  <div ui-view></div>
+    <div ui-view></div>
 </body>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
