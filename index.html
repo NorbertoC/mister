@@ -1,74 +1,48 @@
-<!DOCTYPE>
-<html ng-app="myApp">
-
+<!DOCTYPE html>
+<html ng-app="mister">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Mister Pizza</title>
+    <link href="assets/img/favicon2.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Mis imports-->
+    <link rel="stylesheet" href="assets/css/main.css">
 
-
-  <title>Mister Pizza</title>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
-  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Dropdown.js -->
-  <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
 </head>
-
 <body>
-  <div class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <i class="material-icons">face</i>
-        <a class="navbar-brand" href="#/home">Mister</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#/home">Home</a></li>
-          <li><a href="#/list">Shopping List</a></li>
-          <li><a href="#/404">404</a></li>
-          <div class="col-md-3">
-            <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Dropdown
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#/list">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </div>
-          </div>
-          <li></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div ui-view></div>
+
+<div ui-view></div>
 
 
 
 </body>
-
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
-<script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
 <script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="bower_components/angular-aria/angular-aria.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/angular-material/angular-material.js"></script>
-<script src="app.js"></script>
-<script src="routes.js"></script>
-<script src="shopping-list/shopping-list.controller.js"></script>
-
-
-
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<!--Mis imports-->
+<script src="app/common/app.js"></script>
+<script src="app/common/routes.js"></script>
+<script src="app/categories/comidas/empanadas/empanadas.js"></script>
+<script src="app/categories/comidas/hamburguesas/hamburguesas.js"></script>
+<script src="app/categories/comidas/lomitos/lomitos.js"></script>
+<script src="app/categories/comidas/menu-del-dia/menu-del-dia.js"></script>
+<script src="app/categories/comidas/pizzas/pizzas.js"></script>
+<script src="app/categories/comidas/tartas/tartas.js"></script>
+<script src="app/categories/comidas/comidas.js"></script>
+<script src="app/categories/contacto/contacto.js"></script>
+<script src="app/categories/nosotros/nosotros.js"></script>
+<script src="app/categories/novedades/novedades.js"></script>
+<script src="app/categories/categories.js"></script>
+<script src="app/common/models/categories-model.js"></script>
+<script src="app/common/models/comidas-model.js"></script>
 
 </html>
