@@ -11,7 +11,8 @@
             $stateProvider
                 .state('home', {
                     url: '/home',
-                    templateUrl: 'app/categories/categories.html'
+                    templateUrl: 'app/categories/categories.html',
+                    controller: 'MainCtrl'
                 })
                 .state('empanadas', {
                     url: "/empanadas",
@@ -32,6 +33,10 @@
                 .state('tartas', {
                     url: '/tartas',
                     templateUrl: 'app/categories/comidas/tartas/tartas.html'
+                })
+                .state('hamburguesas', {
+                    url: '/hamburguesas',
+                    templateUrl: 'app/categories/comidas/hamburguesas/hamburguesas.html'
                 })
                 .state('contacto', {
                     url: '/contacto',
