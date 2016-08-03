@@ -1,4 +1,19 @@
 /**
  * Created by n_car on 30/7/2016.
  */
-angular.module('categories.comidas.tartas', []);
+(function() {
+    'use strict';
+    angular.module('mister.tartas', [
+        'ui-router'])
+        .config(function ($stateProvider) {
+            $stateProvider
+                .state('app.tartas', {
+                    url: '/tartas',
+                    views: {
+                        'content@': {
+                            templateUrl: 'categories/comidas/tartas.html'
+                        }
+                    }
+                });
+        });
+})();

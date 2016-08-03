@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="mister">
+<html >
 <head>
     <meta charset="UTF-8">
     <title>Mister Pizza</title>
@@ -14,62 +14,28 @@
     <link rel="stylesheet" href="app/categories/comidas/pizzas/pizzas.css">
 
 </head>
-<body ng-controller="MainCtrl">
-<div class="navbar">
-    <div class="container">
-        <div class="navbar-header" id="Encabezado">
-            <div>
-                <a href="#/home">
-                    <img src="../../assets/img/Misterpizza.jpg" alt="Home" width="300" height="100">
-                </a>
-            </div>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="dropdown-menu" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Menu
-                        <b class="caret"></b></a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#/pizzas">Pizzas</a></li>
-                        <li><a href="#/lomitos">Lomitos</a></li>
-                        <li><a href="#/empanadas">Empanadas</a></li>
-                        <li><a href="#/tartas">Tartas</a></li>
-                        <li><a href="#/hamburguesas">Hamburguesas</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#/menu-del-dia">Menu del dia</a></li>
-                    </ul>
-                </li>
-                <li><a href="#/novedades">Novedades</a></li>
-                <li><a href="#/nosotros">Nosotros</a></li>
-                <li><a href="#/contacto">Contactanos!</a></li>
-                <div class="col-md-3">
-                    <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Menu
-                            <b class="caret"></b>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#/pizzas">Pizzas</a></li>
-                            <li><a href="#/lomitos">Lomitos</a></li>
-                            <li><a href="#/empanadas">Empanadas</a></li>
-                            <li><a href="#/tartas">Tartas</a></li>
-                            <li><a href="#/hamburguesas">Hamburguesas</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#/menu-del-dia">Menu del dia</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </ul>
-        </div>
+
+
+<body ng-app="mister">
+
+<div class="container">
+
+    <!-- Header -->
+    <header ui-view="header" class="row"></header>
+
+    <div class="row">
+        <!-- Content -->
+        <section ui-view="content" class="col-xs-9"></section>
     </div>
+
+    <!-- Footer -->
+    <footer ui-view="footer" class="row"></footer>
 </div>
 
-<div class="container-fluid" ui-view></div>
-
-
-
 </body>
+
+
+
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/angular/angular.js"></script>
@@ -79,20 +45,18 @@
 <script src="bower_components/angular-aria/angular-aria.min.js"></script>
 <script src="bower_components/angular-messages/angular-messages.min.js"></script>
 <!--Mis imports-->
-<script src="app/common/app.js"></script>
-<script src="app/common/routes.js"></script>
 <script src="app/categories/comidas/empanadas/empanadas.js"></script>
 <script src="app/categories/comidas/hamburguesas/hamburguesas.js"></script>
 <script src="app/categories/comidas/lomitos/lomitos.js"></script>
 <script src="app/categories/comidas/menu-del-dia/menu-del-dia.js"></script>
 <script src="app/categories/comidas/pizzas/pizzas.js"></script>
 <script src="app/categories/comidas/tartas/tartas.js"></script>
-<script src="app/categories/comidas/comidas.js"></script>
 <script src="app/categories/contacto/contacto.js"></script>
 <script src="app/categories/nosotros/nosotros.js"></script>
 <script src="app/categories/novedades/novedades.js"></script>
-<script src="app/categories/categories.js"></script>
-<script src="app/common/models/categories-model.js"></script>
-<script src="app/common/models/comidas-model.js"></script>
+<script src="app/common/app.js"></script>
+<script src="app/common/routes.js"></script>
 
 </html>
+
+

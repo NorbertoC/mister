@@ -1,4 +1,19 @@
 /**
  * Created by n_car on 30/7/2016.
  */
-angular.module('categories.comidas.empanadas', []);
+(function() {
+    'use strict';
+    angular.module('mister.empanadas', [
+        'ui-router'])
+        .config(function ($stateProvider) {
+            $stateProvider
+                .state('app.empanadas', {
+                    url: '/empanadas',
+                    views: {
+                        'content@': {
+                            templateUrl: 'categories/comidas/empanadas.html'
+                        }
+                    }
+                });
+        });
+})();

@@ -2,58 +2,105 @@
     'use strict';
 
     angular.module('mister')
-        .config(function($stateProvider, $urlRouterProvider) {
-            //
-            // For any unmatched url, redirect to /state1
-            $urlRouterProvider.otherwise("/home");
-            //
-            // Now set up the states
+        .config(function ($stateProvider, $urlRouterProvider) {
+
+            $urlRouterProvider.otherwise('/home');
+
             $stateProvider
-                .state('home', {
+                .state('app', {
+                    abstract: true,
+                    views: {
+                        'header': {
+                            templateUrl: 'app/common/header.tmpl.html'
+                        },
+                        'footer': {
+                            templateUrl: 'app/common/footer.tmpl.html'
+                        }
+                    }
+                })
+                .state('app.home', {
                     url: '/home',
-                    templateUrl: 'app/categories/categories.html',
-                    controller: 'MainCtrl'
+                    views: {
+                        'content@': {
+                            templateUrl: 'app/common/content.tmpl.html'
+                        }
+                    }
                 })
-                .state('empanadas', {
-                    url: "/empanadas",
-                    templateUrl: "app/categories/comidas/empanadas/empanadas.html"
-                })
-                .state('pizzas', {
+                .state('app.pizzas', {
                     url: '/pizzas',
-                    templateUrl: 'app/categories/comidas/pizzas/pizzas.html'
+                    views: {
+                        'content@': {
+                            templateUrl: 'app/categories/comidas/pizzas/pizzas.html'
+                        }
+                    }
                 })
-                .state('lomitos', {
+                .state('app.lomitos', {
                     url: '/lomitos',
-                    templateUrl: 'app/categories/comidas/lomitos/lomitos.html'
+                    views: {
+                        'content@': {
+                            templateUrl: 'app/categories/comidas/lomitos/lomitos.html'
+                        }
+                    }
                 })
-                .state('menu-del-dia', {
-                    url: '/menu-del-dia',
-                    templateUrl: 'app/categories/comidas/menu-del-dia/menu-del-dia.html'
-                })
-                .state('tartas', {
-                    url: '/tartas',
-                    templateUrl: 'app/categories/comidas/tartas/tartas.html'
-                })
-                .state('hamburguesas', {
+                .state('app.hamburguesas', {
                     url: '/hamburguesas',
-                    templateUrl: 'app/categories/comidas/hamburguesas/hamburguesas.html'
+                    views: {
+                        'content@': {
+                            templateUrl: 'app/categories/comidas/hamburguesas/hamburguesas.html'
+                        }
+                    }
                 })
-                .state('contacto', {
+                .state('app.tartas', {
+                    url: '/tartas',
+                    views: {
+                        'content@': {
+                            templateUrl: 'app/categories/comidas/tartas/tartas.html'
+                        }
+                    }
+                })
+                .state('app.menu-del-dia', {
+                    url: '/menu-del-dia',
+                    views: {
+                        'content@': {
+                            templateUrl: 'app/categories/comidas/menu-del-dia/menu-del-dia.html'
+                        }
+                    }
+                })
+                .state('app.empanadas', {
+                    url: '/empanadas',
+                    views: {
+                        'content@': {
+                            templateUrl: 'app/categories/comidas/empanadas/empanadas.html'
+                        }
+                    }
+                })
+                .state('app.contacto', {
                     url: '/contacto',
-                    templateUrl: 'app/categories/contacto/contactanos.html'
+                    views: {
+                        'content@': {
+                            templateUrl: 'app/categories/contacto/contacto.html'
+                        }
+                    }
                 })
-                .state('nosotros', {
-                    url: '/nosotros',
-                    templateUrl: 'app/categories/nosotros/nosotros.html'
-                })
-                .state('novedades', {
+                .state('app.novedades', {
                     url: '/novedades',
-                    templateUrl: 'app/categories/novedades/novedades.html'
+                    views: {
+                        'content@': {
+                            templateUrl: 'app/categories/novedades/novedades.html'
+                        }
+                    }
+                })
+                .state('app.nosotros', {
+                    url: '/nosotros',
+                    views: {
+                        'content@': {
+                            templateUrl: 'app/categories/nosotros/nosotros.html'
+                        }
+                    }
                 })
 
+        })
 
-            ;
-
-        });
+    ;
 
 })();
