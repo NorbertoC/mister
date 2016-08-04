@@ -4,15 +4,5 @@
 (function() {
     'use strict';
     angular.module('mister.tartas', [])
-        .config(function ($stateProvider) {
-            $stateProvider
-                .state('app.tartas', {
-                    url: '/tartas',
-                    views: {
-                        'content@': {
-                            templateUrl: 'categories/comidas/tartas.html'
-                        }
-                    }
-                });
-        });
+       ;
 })();

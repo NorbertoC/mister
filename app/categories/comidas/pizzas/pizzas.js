@@ -4,15 +4,5 @@
 (function() {
     'use strict';
     angular.module('mister.pizzas', [])
-        .config(function ($stateProvider) {
-            $stateProvider
-                .state('app.pizzas', {
-                    url: '/pizzas',
-                    views: {
-                        'content@': {
-                            templateUrl: 'categories/comidas/pizzas.html'
-                        }
-                    }
-                });
-        });
+        ;
 })();

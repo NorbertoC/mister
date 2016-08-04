@@ -4,15 +4,5 @@
 (function() {
     'use strict';
     angular.module('mister.nosotros', [])
-        .config(function ($stateProvider) {
-            $stateProvider
-                .state('app.nosotros', {
-                    url: '/nosotros',
-                    views: {
-                        'content@': {
-                            templateUrl: 'categories/nosotros/nosotros.html'
-                        }
-                    }
-                });
-        });
+        ;
 })();

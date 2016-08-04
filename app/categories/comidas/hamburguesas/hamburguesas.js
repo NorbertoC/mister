@@ -4,15 +4,5 @@
 (function() {
     'use strict';
     angular.module('mister.hamburguesas', [])
-        .config(function ($stateProvider) {
-            $stateProvider
-                .state('app.hamburguesas', {
-                    url: '/hamburguesas',
-                    views: {
-                        'content@': {
-                            templateUrl: 'categories/comidas/hamburguesas.html'
-                        }
-                    }
-                });
-        });
+        ;
 })();

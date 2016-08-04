@@ -4,15 +4,5 @@
 (function() {
     'use strict';
     angular.module('mister.menu-del-dia', [])
-        .config(function ($stateProvider) {
-            $stateProvider
-                .state('app.menu-del-dia', {
-                    url: '/menu-del-dia',
-                    views: {
-                        'content@': {
-                            templateUrl: 'categories/comidas/menu-del-dia.html'
-                        }
-                    }
-                });
-        });
+        ;
 })();

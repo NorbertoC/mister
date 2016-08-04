@@ -4,15 +4,5 @@
 (function() {
     'use strict';
     angular.module('mister.empanadas', [])
-        .config(function ($stateProvider) {
-            $stateProvider
-                .state('app.empanadas', {
-                    url: '/empanadas',
-                    views: {
-                        'content@': {
-                            templateUrl: 'categories/comidas/empanadas.html'
-                        }
-                    }
-                });
-        });
+        ;
 })();
