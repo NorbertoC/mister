@@ -3,8 +3,7 @@
  */
 (function() {
     'use strict';
-    angular.module('mister.menu-del-dia', [
-        'ui-router'])
+    angular.module('mister.menu-del-dia', [])
         .config(function ($stateProvider) {
             $stateProvider
                 .state('app.menu-del-dia', {

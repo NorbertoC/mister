@@ -3,8 +3,7 @@
  */
 (function() {
     'use strict';
-    angular.module('mister.nosotros', [
-        'ui-router'])
+    angular.module('mister.nosotros', [])
         .config(function ($stateProvider) {
             $stateProvider
                 .state('app.nosotros', {

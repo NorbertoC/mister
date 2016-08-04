@@ -3,8 +3,7 @@
  */
 (function() {
     'use strict';
-    angular.module('mister.contacto', [
-        'ui-router'])
+    angular.module('mister.contacto', [])
         .config(function ($stateProvider) {
             $stateProvider
                 .state('app.contacto', {

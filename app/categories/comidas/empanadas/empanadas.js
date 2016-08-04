@@ -3,8 +3,7 @@
  */
 (function() {
     'use strict';
-    angular.module('mister.empanadas', [
-        'ui-router'])
+    angular.module('mister.empanadas', [])
         .config(function ($stateProvider) {
             $stateProvider
                 .state('app.empanadas', {

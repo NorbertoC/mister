@@ -3,8 +3,7 @@
  */
 (function() {
     'use strict';
-    angular.module('mister.tartas', [
-        'ui-router'])
+    angular.module('mister.tartas', [])
         .config(function ($stateProvider) {
             $stateProvider
                 .state('app.tartas', {

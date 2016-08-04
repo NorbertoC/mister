@@ -3,17 +3,6 @@
  */
 (function() {
     'use strict';
-    angular.module('mister.lomitos', [
-        'ui-router'])
-        .config(function ($stateProvider) {
-            $stateProvider
-                .state('app.lomitos', {
-                    url: '/lomitos',
-                    views: {
-                        'content@': {
-                            templateUrl: 'app/categories/comidas/lomitos/lomitos.html'
-                        }
-                    }
-                });
-        });
+    angular.module('mister.lomitos',[])
+        ;
 })();

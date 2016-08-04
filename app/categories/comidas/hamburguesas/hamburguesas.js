@@ -3,8 +3,7 @@
  */
 (function() {
     'use strict';
-    angular.module('mister.hamburguesas', [
-        'ui-router'])
+    angular.module('mister.hamburguesas', [])
         .config(function ($stateProvider) {
             $stateProvider
                 .state('app.hamburguesas', {
