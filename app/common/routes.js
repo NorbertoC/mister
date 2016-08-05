@@ -30,7 +30,9 @@
                     url: '/pizzas',
                     views: {
                         'content@': {
-                            templateUrl: 'app/categories/comidas/pizzas/pizzas.html'
+                            templateUrl: 'app/categories/comidas/pizzas/pizzas.html',
+                            controller: 'PizzasListCtrl',
+                            controllerAs: 'pizzasListCtrl'
                         }
                     }
                 })
